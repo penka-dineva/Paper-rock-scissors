@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import SelectionBoard from './selectionBoard';
+<<<<<<< HEAD
 
+=======
+>>>>>>> e275260fd63ebc03139234bfb2a474329b905a8a
 import ResultMessage from './resultMessage';
 
 class GameArea extends Component {
@@ -113,7 +116,10 @@ computerMakesMove () {
 }
 
 getGameResult (item) {
+<<<<<<< HEAD
 	let dd = item
+=======
+>>>>>>> e275260fd63ebc03139234bfb2a474329b905a8a
 	let computersChoice = this.state.computersChoice;
 	let playersChoice =  this.state.playersChoice;
 	console.log('Player', playersChoice, 'PC', computersChoice )
@@ -128,7 +134,10 @@ getGameResult (item) {
       		resultMessage: 'You both picked the same items'
     	})
 		return
+<<<<<<< HEAD
 		//this.playAgain();
+=======
+>>>>>>> e275260fd63ebc03139234bfb2a474329b905a8a
 	}
 
 	if(playersChoice == 1 && computersChoice == 2) {
