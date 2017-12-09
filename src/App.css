@@ -1,0 +1,67 @@
+.App {
+  width: 100%;
+  text-align: center;
+}
+
+
+.rock, .paper, .scissors {
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+  border: 1px solid;
+ background-size: cover;
+ background-repeat:  no-repeat;
+ display: inline-block;
+ transition: transform 3s ease-in;
+
+
+}
+.rock {
+   background-image: url('./assets/rock.png');
+}
+.scissors {
+  background-image: url('./assets/scissors.png');
+}
+.paper {
+   background-image: url('./assets/paper.png');
+}
+
+ .notSelected {
+  border: 1px solid red;
+  
+}
+.selected {
+ transform: scale(1.1); 
+ border: 1px solid red;
+}
+
+.btn {
+  width: 150px;
+  padding: 50px;
+  height: auto;
+  background-color: yellow;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+.msg {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  width:200px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px dashed red;
+  margin-left: -100px;
+  margin-top: -50px;
+  z-index: 100;
+ 
+}
+.msgVisible {
+  display: block;
+}
+
+.msgInvisible {
+  display: none;
+}
