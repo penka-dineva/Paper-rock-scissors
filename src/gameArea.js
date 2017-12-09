@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import SelectionBoard from './selectionBoard';
-
 import ResultMessage from './resultMessage';
 
 class GameArea extends Component {
@@ -127,7 +126,6 @@ getGameResult (item) {
       		resultMessage: 'You both picked the same items'
     	})
 		return
-		//this.playAgain();
 	}
 
 	if(playersChoice == 1 && computersChoice == 2) {
