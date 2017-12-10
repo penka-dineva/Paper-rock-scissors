@@ -1,6 +1,7 @@
 .App {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Arial', sans-serif; }
 
 .rock, .paper, .scissors {
   width: 300px;
