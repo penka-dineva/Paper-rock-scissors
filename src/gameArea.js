@@ -43,13 +43,13 @@ class GameArea extends Component {
 		      ],
 		    }
 
-this.playerSelectsItem = this.playerSelectsItem.bind(this);
-this.computerMakesMove = this.computerMakesMove.bind(this);
-this.getGameResult = this.getGameResult.bind(this);
-this.playGame = this.playGame.bind(this);
-this.handleSelectedElement = this.handleSelectedElement.bind(this);
-this.handleSelectedElementLabel = this.handleSelectedElementLabel.bind(this);
-this.playAgain = this.playAgain.bind(this);
+	this.playerSelectsItem = this.playerSelectsItem.bind(this);
+	this.computerMakesMove = this.computerMakesMove.bind(this);
+	this.getGameResult = this.getGameResult.bind(this);
+	this.playGame = this.playGame.bind(this);
+	this.handleSelectedElement = this.handleSelectedElement.bind(this);
+	this.handleSelectedElementLabel = this.handleSelectedElementLabel.bind(this);
+	this.playAgain = this.playAgain.bind(this);
 }
 
 
@@ -62,7 +62,6 @@ console.log(id, itemName)
 
 	this.playerSelectsItem(id, itemName);
 	this.computerMakesMove ();
-
 }
 
 
@@ -124,10 +123,8 @@ computerMakesMove (id) {
 }
 
 getGameResult (item) {
-	
 	let computersChoice = this.state.computersChoice;
 	let playersChoice =  this.state.playersChoice;
-	console.log('Player', playersChoice, 'PC', computersChoice )
 	let player = 'your choise';
 	let computer = 'computer chose' ;
 	let selectedFirst = 'selectedFirst';
@@ -136,8 +133,8 @@ getGameResult (item) {
 	let selectedItemComputer =this.state.idItemComputer;
 
     this.setState({
-      		messageIsVsible: 'msgVisible'
-    	})
+  		messageIsVsible: 'msgVisible'
+	})
 
 	if (this.state.idItemPlayer === this.state.idItemComputer) {
 		this.setState({
@@ -182,27 +179,25 @@ handleSelectedElement (selectedItem, choice, gamer, status) {
 	selectedStyle[idSelected].isSelected = status;
 
 	this.setState({
-	     selectedStyle
-	    }, () => this.handleSelectedElementLabel(idSelected, gamer))
-	     console.log('selected state is..', this.state.options)
+     selectedStyle
+    }, () => this.handleSelectedElementLabel(idSelected, gamer))
 }
 
 handleSelectedElementLabel (selectedItem, gamer) {
 	let idSelected = selectedItem;
-	console.log(idSelected, gamer)
 	let selectedStyle = {...this.state.options};
 
 	selectedStyle[idSelected].whoHasPlayed = gamer;
 
 	this.setState({
-	     selectedStyle
-	    })
-	     console.log('selected state is..', this.state.options)
+     selectedStyle
+    })
 }
 
 playAgain() {
 	window.location.reload(false);
 }
+
   render() {
     return (
      <div className={this.props.areaStyle}>
