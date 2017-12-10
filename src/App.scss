@@ -1,37 +1,46 @@
 .App {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+}
+
 
 .rock, .paper, .scissors {
   width: 300px;
   height: 300px;
   margin-right: 50px;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat:  no-repeat;
   display: inline-block;
-  transition: transform 1s ease-in; }
+  transition: transform 1s ease-in;
+}
 
 .rock {
-  background-image: url("./assets/rock.png"); }
+   background-image: url('./assets/rock.png');
+}
 
 .scissors {
-  background-image: url("./assets/scissors.png"); }
+  background-image: url('./assets/scissors.png');
+}
 
 .paper {
-  background-image: url("./assets/paper.png"); }
+   background-image: url('./assets/paper.png');
+}
 
 .selectedFirst, .selectedSecond {
-  transform: scale(1.05);
-  position: absolute;
-  z-index: 10;
-  padding: 20px;
-  top: 50%; }
+ transform: scale(1.05); 
+ position: absolute;
+ z-index: 10;
+ padding: 20px;
+ top: 50%;
+}
 
 .selectedFirst {
-  left: 15%; }
+    left: 15%;
+}
 
 .selectedSecond {
-  right: 15%; }
+    right: 15%;
+}
 
 .tagName {
   color: #fff;
@@ -41,7 +50,8 @@
   color: #fff;
   font-size: 23px;
   padding: 10px 5px;
-  border-radius: 3px; }
+  border-radius: 3px;
+}
 
 .btn {
   width: 150px;
@@ -55,26 +65,30 @@
   margin: 0 auto;
   z-index: 20;
   color: #fff;
-  margin-top: 30px; }
+  margin-top: 30px;
+}
 
 .msg {
-  width: 50%;
-  height: auto;
-  padding: 20px 10px;
-  text-align: center;
-  font-size: 24px;
-  margin: 50px auto 50px;
-  background-color: #444;
-  color: #fff;
-  border-radius: 10px;
-  border: 2px solid #fff; }
+ width: 50%;
+ height: auto;
+ padding: 20px 10px;
+ text-align: center;
+ font-size: 24px;
+ margin: 50px auto 50px;
+ background-color: #444;
+ color: #fff;
+ border-radius: 10px;
+ border: 2px solid #fff;
+}
 
 .msgInvisible, .notVisible {
-  display: none; }
+  display: none;
+}
 
 .msgVisible, .visible {
-  display: block; }
-
+ display: block;
+}
+  
 .msgWrapper {
   position: absolute;
   top: 0;
@@ -82,13 +96,16 @@
   width: 100%;
   bottom: 0;
   z-index: 5;
-  background-color: #999;
-  margin: 0 auto; }
+  background-color:#999;
+  margin: 0 auto;
+}
 
 .title {
   color: red;
   margin-bottom: 120px;
-  padding: 50px; }
+  padding: 50px;
+}
 
 .item {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}

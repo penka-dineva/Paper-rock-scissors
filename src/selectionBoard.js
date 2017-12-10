@@ -7,8 +7,12 @@ class SelectionBoard extends Component {
   	const selected =  this.props.selected;
 	const type = this.props.style;
 	const classes = `${selected} ${type}`;
+	const tagClasses = `tagName`;
+
     return (
-     <div className={classes} onClick={this.props.action.bind(this, this.props.in)}>{this.props.whoHasPlayed}</div>
+     <div className={classes} onClick={this.props.action.bind(this, this.props.id, this.props.itemName)}>
+		<span className={tagClasses}>{this.props.whoHasPlayed}</span>
+     </div>
     );
   }
 }
