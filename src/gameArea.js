@@ -55,7 +55,6 @@ class GameArea extends Component {
 
 
 playGame (id, itemName) {
-console.log(id, itemName)
 	if (id === undefined) {
 			return;
 	} 
@@ -153,13 +152,11 @@ getGameResult (item) {
   		winnersItem: this.state.playersChoice,
   		losersItem: this.state.computersChoice
     	}, ()=>console.log(this.state.winnersItem, this.state.losersItem))
-		
     	
     	this.handleSelectedElement(selectedItemPlayer, playersChoice, player, selectedFirst)
     	this.handleSelectedElement(selectedItemComputer, computersChoice, computer, selectedSecond)
     	return
 	}
-	
 	
 	this.setState({
 		resultMessage: 'Sorry, computer wins',
